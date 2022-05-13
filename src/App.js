@@ -3,6 +3,7 @@ import './styles/App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard';
 import { Component } from 'react';
+import Home from './components/Home/Home';
 
 class App extends Component{
 
@@ -14,7 +15,7 @@ class App extends Component{
         <BrowserRouter>
         <Nav/>
         <Switch>
-          <Route path='/' exact component={Dashboard}/>
+          <Route path='/' exact component={Home}/>
           <Route path='/:page' component={Dashboard}/>
           {/* <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
