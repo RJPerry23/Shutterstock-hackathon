@@ -4,3 +4,19 @@
     display: flex;
     flex-direction: column;
 }
+
+.invisible-button-link{
+    position:absolute;
+    width:785px;
+    height:300px;
+    top:0px;
+    left: 75px;
+    border-radius:10px;  
+}
+
+.invisible-button{
+    width:100%;
+    height:100%;
+    margin:0px; 
+    visibility:hidden;
+}
