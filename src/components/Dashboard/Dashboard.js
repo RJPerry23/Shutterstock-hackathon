@@ -1,5 +1,6 @@
 import './Dashboard.scss'
 import React, { Component } from 'react';
+import Nav from '../Nav/Nav';
 import ContributorBar from '../ContributorBar/ContributorBar';
 import Search from '../../images/search.svg'
 import Stats from '../../images/stats.png'
@@ -43,6 +44,8 @@ class Dashboard extends Component{
 
     render() {
         return (
+          <div>
+            <Nav/>
             <div className='below-nav'>
 
                 <ContributorBar
@@ -90,6 +93,7 @@ class Dashboard extends Component{
                             <img src={Insights} className='dashboard__middle--right--bottom' alt='insights'/>
                         </div>
                     </div>
+                </div>
                 </div>
                 </div>
             </div>
