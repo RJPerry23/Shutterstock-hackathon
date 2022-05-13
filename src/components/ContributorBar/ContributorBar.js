@@ -146,6 +146,7 @@ class ContributorBar extends Component {
       <div className='contributor'>
         <img src={ProfileImage} className='profile' alt='profile' />
         <div className='contributor__name'>Christina</div>
+        <button className='contributor__button'>Upload</button>
         {!this.state.dashboard ? (
           <div className='contributor__item'>
             <Link to='/dashboard/Overview' className='link' onClick={this.clickDashboard}>
