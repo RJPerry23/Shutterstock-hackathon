@@ -50,11 +50,11 @@ class Dashboard extends Component{
                     {this.state.animationClass === "test"? 
                     <button className='login__bottom--button'
                     onClick={this.animationState}>
-                    Sad Background
+                    Normal Mode
                     </button> :
                     <button className='login__bottom--button'
                     onClick={this.animationState}>
-                    Fun Background </button>}
+                    Fun Mode </button>}
 
                 <div className='dashboard'>
                     <div className='dashboard__top'>
