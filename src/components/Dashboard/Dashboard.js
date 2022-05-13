@@ -53,7 +53,10 @@ class Dashboard extends Component{
 
                 <div className='dashboard'>
                     <div className='dashboard__top'>
-                        <h2 className='dashboard__top--heading'>{this.props.match.params.page}</h2>
+                        <h2 className='dashboard__top--heading'>
+                        {this.props.match.params.page?
+                        this.props.match.params.page : 
+                        "Overview"}</h2>
                         <img src={Search} className='dashboard__top--icon' alt='search'></img>
                         <input 
                         type="text" 
