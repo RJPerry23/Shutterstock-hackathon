@@ -1,7 +1,6 @@
 import React from 'react';
 import page from '../../assets/LandingPage.png';
 import './Home.scss';
-import SideNavigation from '../SideNavigation/SideNavigation';
 import { Link } from 'react-router-dom';
 function Home() {
   return (
