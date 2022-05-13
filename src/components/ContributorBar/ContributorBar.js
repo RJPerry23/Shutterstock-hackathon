@@ -15,6 +15,7 @@ import MessageBlack from '../../images/Bar-black/message.svg'
 import MessageRed from '../../images/Bar-red/message-red.svg'
 import SettingBlack from '../../images/Bar-black/setting.svg'
 import SettingRed from '../../images/Bar-red/setting-red.svg'
+import { Link } from 'react-router-dom';
 
 
 class ContributorBar extends Component{
@@ -136,66 +137,74 @@ class ContributorBar extends Component{
                     Christina
                 </div>
                 {!this.state.dashboard?
-                    <div className='contributor__item' onClick={this.clickDashboard}>
-                    <img src={DashboardBlack} className='contributor__icon'/>
-                    Dashboard
-                    </div> :
-                            <div className='contributor__item--active' onClick={this.clickDashboard}>
-                            <img src={DashboardRed} className='contributor__icon--active'/>
-                            Dashboard
-                            </div>}
+                <div className='contributor__item' >
+                <Link to='/Overview' className='link' onClick={this.clickDashboard}>
+                <img src={DashboardBlack} className='contributor__icon' alt="dash"/>
+                Dashboard </Link>
+                </div> :
+                        <div className='contributor__item--active' onClick={this.clickDashboard}>
+                        <img src={DashboardRed} className='contributor__icon--active' alt='dash red'/>
+                        Dashboard
+                        </div>}
                 {!this.state.earnings?
-                <div className='contributor__item' onClick={this.clickEarnings}>
-                <img src={DollarBlack} className='contributor__icon'/>
-                Earnings
+                <div className='contributor__item' >
+                <Link to='/Earnings' className='link' onClick={this.clickEarnings}>
+                <img src={DollarBlack} className='contributor__icon' alt='dollar'/>
+                Earnings</Link>
                 </div> :
                         <div className='contributor__item--active' onClick={this.clickEarnings}>
-                        <img src={DollarRed} className='contributor__icon--active'/>
+                        <img src={DollarRed} className='contributor__icon--active' alt='dollar red'/>
                         Earnings
                         </div>}
                 {!this.state.portfolio?
-                <div className='contributor__item' onClick={this.clickPortfolio}>
-                <img src={FolderBlack} className='contributor__icon'/>
-                Portfolio
+                <div className='contributor__item' >
+                <Link to='/Portfolio' className='link' onClick={this.clickPortfolio}>
+                <img src={FolderBlack} className='contributor__icon' alt='folder'/>
+                Portfolio</Link>
                 </div> :
                         <div className='contributor__item--active' onClick={this.clickPortfolio}>
-                        <img src={FolderRed} className='contributor__icon--active'/>
+                        <img src={FolderRed} className='contributor__icon--active' alt='folder red'/>
                         Portfolio
                         </div>}
                 {!this.state.insights?
-                <div className='contributor__item' onClick={this.clickInsights}>
-                <img src={EditBlack} className='contributor__icon'/>
-                Insights
+                <div className='contributor__item' >
+                <Link to='/Insights' className='link' onClick={this.clickInsights}>
+                <img src={EditBlack} className='contributor__icon' alt='edit'/>
+                Insights</Link>
                 </div> :
                         <div className='contributor__item--active' onClick={this.clickInsights}>
-                        <img src={EditRed} className='contributor__icon--active'/>
+                        <img src={EditRed} className='contributor__icon--active' alt='edit red'/>
                         Insights
                         </div>}
                 {!this.state.settings?
-                <div className='contributor__item' onClick={this.clickSettings}>
-                <img src={SettingBlack} className='contributor__icon'/>
-                Settings
+                <div className='contributor__item' >
+                <Link to='/Settings' className='link' onClick={this.clickSettings}>
+                <img src={SettingBlack} className='contributor__icon' alt='setting'/>
+                Settings</Link>
                 </div> :
                         <div className='contributor__item--active' onClick={this.clickSettings}>
-                        <img src={SettingRed} className='contributor__icon--active'/>
+                        <img src={SettingRed} className='contributor__icon--active' alt='setting red'/>
                         Settings
                         </div>}
                 {!this.state.logout?
-                <div className='contributor__item' onClick={this.clickLogout}>
-                <img src={LogoutBlack} className='contributor__icon'/>
-                Logout
+                <div className='contributor__item' >
+                <Link to='/Logout' className='link' onClick={this.clickLogout}>
+                <img src={LogoutBlack} className='contributor__icon' alt='logout'/>
+                Logout</Link>
                 </div> :
                         <div className='contributor__item--active' onClick={this.clickLogout}>
-                        <img src={LogoutRed} className='contributor__icon--active'/>
+                        <img src={LogoutRed} className='contributor__icon--active' alt='logout red'/>
                         Logout
                         </div>}
+                
                 {!this.state.feedback?
-                <div className='contributor__item' onClick={this.clickFeedback}>
-                <img src={MessageBlack} className='contributor__icon'/>
-                Feedback
+                <div className='contributor__item' >
+                <Link to='/Feedback' className='link' onClick={this.clickFeedback}>
+                <img src={MessageBlack} className='contributor__icon' alt='message'/>
+                Feedback</Link>
                 </div> :
                         <div className='contributor__item--active' onClick={this.clickFeedback}>
-                        <img src={MessageRed} className='contributor__icon--active'/>
+                        <img src={MessageRed} className='contributor__icon--active' alt='message red'/>
                         Feedback
                         </div>}
             </div>

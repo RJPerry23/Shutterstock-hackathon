@@ -10,6 +10,16 @@
     left: 0.5rem;
 }
 
+.link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #6A6A6A;
+    cursor: pointer;
+}
+
 .contributor{
     display: flex;
     flex-direction: column;
@@ -36,8 +46,7 @@
         font-weight: 600;
         font-size: 0.9rem;
         color: #6A6A6A;
-        margin: 1.25rem 1rem 1rem 0.5rem;
-        cursor: pointer;
+        padding: 1.25rem 1rem 1rem 0.5rem;
 
         &--active{
             display: flex;
