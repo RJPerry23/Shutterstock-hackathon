@@ -114,7 +114,7 @@ class ContributorBar extends Component{
     }
 
     clickFeedback = () => {
-        if (this.state.logout === false) {
+        if (this.state.feedback === false) {
             this.setState({
                 dashboard: false,
                 earnings: false,
