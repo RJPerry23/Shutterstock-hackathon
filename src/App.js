@@ -5,31 +5,24 @@ import Dashboard from './components/Dashboard/Dashboard';
 import { Component } from 'react';
 import Home from './components/Home/Home';
 
-class App extends Component{
-
-
-
+class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className='App'>
         <BrowserRouter>
-        <Nav/>
-        <Switch>
-          <Route path='/' exact component={Home}/>
-          <Route path='/dashboard' exact component={Dashboard}/>
-          <Route path='/dashboard/:page' component={Dashboard}/>
-          {/* <Route path='/' component={Dashboard}/>
+          <Nav />
+          <Switch>
+            <Route path='/login' exact component={Home} />
+            <Route path='/:page' component={Dashboard} />
+            {/* <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/> */}
-        </Switch>
+          </Switch>
         </BrowserRouter>
-
-
-        </div>
+      </div>
     );
-  
   }
 }
 
