@@ -19,24 +19,24 @@ class Dashboard extends Component{
                 <ContributorBar/>
                 <div className='dashboard'>
                     <div className='dashboard__top'>
-                        <h2 className='dashboard__top--heading'>Overview</h2>
-                        <img src={Search} className='dashboard__top--icon'></img>
+                        <h2 className='dashboard__top--heading'>{this.props.match.params.page}</h2>
+                        <img src={Search} className='dashboard__top--icon' alt='search'></img>
                         <input 
                         type="text" 
                         className='dashboard__top--search'
                         placeholder='Search...'></input>
-                        <img src={Menu} className='dashboard__top--menu'/>
-                        <img src={Notifications} className='dashboard__top--notifications'/>
+                        <img src={Menu} className='dashboard__top--menu' alt='menu'/>
+                        <img src={Notifications} className='dashboard__top--notifications' alt='notifications'/>
                     </div>
                     <div className='dashboard__middle'>
                         <div className='dashboard__middle--left'>
-                            <img src={Stats} className='dashboard__middle--left--top'/>
-                            <img src={BarGraph} className='dashboard__middle--left--middle'/>
-                            <img src={Portfolio} className='dashboard__middle--left--bottom'/>
+                            <img src={Stats} className='dashboard__middle--left--top' alt='stats'/>
+                            <img src={BarGraph} className='dashboard__middle--left--middle' alt='graph'/>
+                            <img src={Portfolio} className='dashboard__middle--left--bottom' alt='portfolio'/>
                         </div>
                         <div className='dashboard__middle--right'>
-                            <img src={Trending} className='dashboard__middle--right--top'/>
-                            <img src={Insights} className='dashboard__middle--right--bottom'/>
+                            <img src={Trending} className='dashboard__middle--right--top' alt='trending'/>
+                            <img src={Insights} className='dashboard__middle--right--bottom' alt='insights'/>
                         </div>
                     </div>
                 </div>
