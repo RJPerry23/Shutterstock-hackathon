@@ -3,7 +3,8 @@ import './styles/App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard';
 import { Component } from 'react';
-import Home from './components/Home/Home';
+import Home from './components/LoggedIn/LoggedIn';
+import LoggedIn from './components/LoggedIn/LoggedIn';
 
 class App extends Component {
   render() {
@@ -12,8 +13,10 @@ class App extends Component {
         <BrowserRouter>
           <Nav />
           <Switch>
-            <Route path='/login' exact component={Home} />
-            <Route path='/:page' component={Dashboard} />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/login' component={LoggedIn} />
+            <Route path='/dashboard' exact component={Dashboard} />
+            <Route path='/dashboard/:page' component={Dashboard} />
             {/* <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>

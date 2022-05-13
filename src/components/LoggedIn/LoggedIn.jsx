@@ -1,10 +1,10 @@
 import React from 'react';
 import page from '../../assets/HomePage.png';
-import './Home.scss';
+import './LoggedIn.scss';
 import SideNavigation from '../SideNavigation/SideNavigation';
 import { Link } from 'react-router-dom';
 
-function Home() {
+function LoggedIn() {
   return (
     <div className='container'>
       <SideNavigation />
@@ -17,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default LoggedIn;
