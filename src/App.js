@@ -13,8 +13,10 @@ class App extends Component {
         <BrowserRouter>
           <Nav />
           <Switch>
-            <Route path='/login' exact component={LoggedIn} />
-            <Route path='/:page' component={Dashboard} />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/login' component={LoggedIn} />
+            <Route path='/dashboard' exact component={Dashboard} />
+            <Route path='/dashboard/:page' component={Dashboard} />
             {/* <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
