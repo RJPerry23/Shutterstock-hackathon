@@ -5,6 +5,8 @@
     background-color: #FFFFFF;
 
     &__left{
+        display: flex;
+        align-items: center;
 
         &--contributor{
             width: 20rem;

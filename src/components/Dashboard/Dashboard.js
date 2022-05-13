@@ -39,7 +39,10 @@ class Dashboard extends Component{
     render() {
         return (
             <div className='below-nav'>
-                <ContributorBar/>
+
+                <ContributorBar
+                location={this.props.match.params.page}/>
+
                 <div className={this.state.animationClass}>
 
                     {this.state.animationClass === "test"? 
