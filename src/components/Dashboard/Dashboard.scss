@@ -44,15 +44,48 @@
             }
         }
 
-        &--menu{
-            margin-left: 3.25rem;
-            width: 1.5rem;
+        &--corner{
+            
+            &--icons{
+                position: relative;
+                left: 2.3rem;
+                bottom: 1rem;
+
+                &--notifications{
+                    margin-left: 3.25rem;
+                    width: 1.5rem;
+                }
+        
+                &--share{
+                    margin-left: 1rem;
+                    width: 1.5rem;
+                }
+        
+                &--menu{
+                    margin-left: 1rem;
+                    width: 1.5rem;
+                }    
+            }
+            
+            &--button{
+                color: #FFFFFF;
+                background-color: #DA3928;
+                border: none;
+                border-radius: 20px;
+                margin-top: 1rem;
+                padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                position: relative;
+                left: 7.8rem;
+                bottom: 1rem;
+        
+                &:active{
+                    background-color: #8b2a20;
+                }
+            }
         }
 
-        &--notifications{
-            margin-left: 3.25rem;
-            width: 1.5rem;
-        }
+
+
     }
 
     &__middle{
