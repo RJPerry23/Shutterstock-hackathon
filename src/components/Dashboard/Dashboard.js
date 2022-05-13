@@ -1,5 +1,6 @@
 import './Dashboard.scss'
 import React, { Component } from 'react';
+import Nav from '../Nav/Nav';
 import ContributorBar from '../ContributorBar/ContributorBar';
 import Search from '../../images/search.svg'
 import Stats from '../../images/stats.png'
@@ -42,9 +43,10 @@ class Dashboard extends Component{
       } 
 
     render() {
+      console.log(this.props.match);
+
         return (
             <div className='below-nav'>
-
                 <ContributorBar
                 location={this.props.match.params.page}/>
 
@@ -92,7 +94,7 @@ class Dashboard extends Component{
                     </div>
                 </div>
                 </div>
-            </div>
+                </div>
         );    
     }
 };

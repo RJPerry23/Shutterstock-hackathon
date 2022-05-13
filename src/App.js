@@ -16,7 +16,8 @@ class App extends Component{
         <Nav/>
         <Switch>
           <Route path='/' exact component={Home}/>
-          <Route path='/:page' component={Dashboard}/>
+          <Route path='/dashboard' exact component={Dashboard}/>
+          <Route path='/dashboard/:page' component={Dashboard}/>
           {/* <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
           <Route path='/' component={Dashboard}/>
