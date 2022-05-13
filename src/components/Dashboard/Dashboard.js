@@ -1,6 +1,5 @@
 import './Dashboard.scss'
 import React, { Component } from 'react';
-import Nav from '../Nav/Nav';
 import ContributorBar from '../ContributorBar/ContributorBar';
 import Search from '../../images/search.svg'
 import Stats from '../../images/stats.png'
