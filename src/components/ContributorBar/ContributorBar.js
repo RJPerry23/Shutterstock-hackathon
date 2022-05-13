@@ -154,7 +154,7 @@ class ContributorBar extends Component{
                 <button className='contributor__button'>Upload</button>
                 {!this.state.dashboard?
                 <div className='contributor__item' >
-                <Link to='/Overview' className='link' onClick={this.clickDashboard}>
+                <Link to='/dashboard/Overview' className='link' onClick={this.clickDashboard}>
                 <img src={DashboardBlack} className='contributor__icon' alt="dash"/>
                 Dashboard </Link>
                 </div> :
@@ -164,7 +164,7 @@ class ContributorBar extends Component{
                         </div>}
                 {!this.state.earnings?
                 <div className='contributor__item' >
-                <Link to='/Earnings' className='link' onClick={this.clickEarnings}>
+                <Link to='/dashboard/Earnings' className='link' onClick={this.clickEarnings}>
                 <img src={DollarBlack} className='contributor__icon' alt='dollar'/>
                 Earnings</Link>
                 </div> :
@@ -174,7 +174,7 @@ class ContributorBar extends Component{
                         </div>}
                 {!this.state.portfolio?
                 <div className='contributor__item' >
-                <Link to='/Portfolio' className='link' onClick={this.clickPortfolio}>
+                <Link to='/dashboard/Portfolio' className='link' onClick={this.clickPortfolio}>
                 <img src={FolderBlack} className='contributor__icon' alt='folder'/>
                 Portfolio</Link>
                 </div> :
@@ -184,7 +184,7 @@ class ContributorBar extends Component{
                         </div>}
                 {!this.state.insights?
                 <div className='contributor__item' >
-                <Link to='/Insights' className='link' onClick={this.clickInsights}>
+                <Link to='/dashboard/Insights' className='link' onClick={this.clickInsights}>
                 <img src={EditBlack} className='contributor__icon' alt='edit'/>
                 Insights</Link>
                 </div> :
@@ -194,7 +194,7 @@ class ContributorBar extends Component{
                         </div>}
                 {!this.state.settings?
                 <div className='contributor__item' >
-                <Link to='/Settings' className='link' onClick={this.clickSettings}>
+                <Link to='/dashboard/Settings' className='link' onClick={this.clickSettings}>
                 <img src={SettingBlack} className='contributor__icon' alt='setting'/>
                 Settings</Link>
                 </div> :
@@ -204,7 +204,7 @@ class ContributorBar extends Component{
                         </div>}
                 {!this.state.logout?
                 <div className='contributor__item' >
-                <Link to='/Logout' className='link' onClick={this.clickLogout}>
+                <Link to='/dashboard/Logout' className='link' onClick={this.clickLogout}>
                 <img src={LogoutBlack} className='contributor__icon' alt='logout'/>
                 Logout</Link>
                 </div> :
@@ -215,7 +215,7 @@ class ContributorBar extends Component{
                 
                 {!this.state.feedback?
                 <div className='contributor__item' >
-                <Link to='/Feedback' className='link' onClick={this.clickFeedback}>
+                <Link to='/dashboard/Feedback' className='link' onClick={this.clickFeedback}>
                 <img src={MessageBlack} className='contributor__icon' alt='message'/>
                 Feedback</Link>
                 </div> :
