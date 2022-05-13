@@ -11,6 +11,9 @@ import Notifications from '../../images/notifications.svg'
 import Menu from '../../images/Menu.svg'
 import MenuDark from '../../images/Menu-dark.svg'
 import NotificationsDark from '../../images/Notifications-dark.svg'
+import Share from '../../images/share.svg'
+import ShareDark from '../../images/share-dark.svg'
+
 
 class Dashboard extends Component{
     state = {
@@ -39,9 +42,10 @@ class Dashboard extends Component{
       } 
 
     render() {
+      console.log(this.props.match);
+
         return (
             <div className='below-nav'>
-
                 <ContributorBar
                 location={this.props.match.params.page}/>
 
@@ -67,8 +71,14 @@ class Dashboard extends Component{
                         type="text" 
                         className='dashboard__top--search'
                         placeholder='Search...'></input>
-                        <img src={this.state.animationClass === "test"? Menu : MenuDark} className='dashboard__top--menu' alt='menu'/>
-                        <img src={this.state.animationClass === "test"? Notifications : NotificationsDark} className='dashboard__top--notifications' alt='notifications'/>
+                        <div className='dashboard__top--corner'>
+                          <div className='dashboard__top--corner--icons'>
+                          <img src={this.state.animationClass === "test"? Notifications : NotificationsDark} className='dashboard__top--corner--icons--notifications' alt='notifications'/>
+                          <img src={this.state.animationClass === "test"? Share : ShareDark} className='dashboard__top--corner--icons--share' alt='share'/>
+                          <img src={this.state.animationClass === "test"? Menu : MenuDark} className='dashboard__top--corner--icons--menu' alt='menu'/>
+                          </div>
+                          <button className='dashboard__top--corner--button'>Upload</button>
+                        </div>
                     </div>
                     <div className='dashboard__middle'>
                         <div className='dashboard__middle--left'>
@@ -83,7 +93,7 @@ class Dashboard extends Component{
                     </div>
                 </div>
                 </div>
-            </div>
+                </div>
         );    
     }
 };
