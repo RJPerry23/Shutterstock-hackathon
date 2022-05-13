@@ -54,7 +54,7 @@ class Dashboard extends Component{
                     </button> :
                     <button className='login__bottom--button'
                     onClick={this.animationState}>
-                    Fun Mode </button>}
+                    Color Mode </button>}
 
                 <div className='dashboard'>
                     <div className='dashboard__top'>
