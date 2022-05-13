@@ -11,12 +11,46 @@ import Notifications from '../../images/notifications.svg'
 import Menu from '../../images/Menu.svg'
 
 class Dashboard extends Component{
-
+    state = {
+        animationClass: 'test'
+    }
+    
+    //For background animation
+    constructor (props) {
+        super(props);
+        this.state = {
+          animationClass: 'test'
+        }
+        this.animationState = this.animationState.bind(this);
+      }
+      
+      animationState(){
+        if(this.state.animationClass === 'test'){
+          this.setState({
+            animationClass: 'test paused'
+          });
+        }else{
+          this.setState({
+            animationClass: 'test'
+          });
+        }
+      } 
 
     render() {
         return (
             <div className='below-nav'>
                 <ContributorBar/>
+                <div className={this.state.animationClass}>
+
+                    {this.state.animationClass === "test"? 
+                    <button className='login__bottom--button'
+                    onClick={this.animationState}>
+                    Sad Background
+                    </button> :
+                    <button className='login__bottom--button'
+                    onClick={this.animationState}>
+                    Fun Background </button>}
+
                 <div className='dashboard'>
                     <div className='dashboard__top'>
                         <h2 className='dashboard__top--heading'>{this.props.match.params.page}</h2>
@@ -39,6 +73,7 @@ class Dashboard extends Component{
                             <img src={Insights} className='dashboard__middle--right--bottom' alt='insights'/>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         );    
