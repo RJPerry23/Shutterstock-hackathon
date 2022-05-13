@@ -7,20 +7,20 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <div className='nav'>
-            <div className='nav__left'>
+        <div className='navi'>
+            <div className='navi__left'>
                 <Link to="/" className='link'>
                 <img src={LogoContributor} alt="contributor"
-                className='nav__left--contributor'/>
+                className='navi__left--contributor'/>
                 </Link>
             </div>
-            <div className='nav__right'>
-                <img className="nav__right--icon" src={User} alt="person"/>
-                <div className='nav__right--user'>
+            <div className='navi__right'>
+                <img className="navi__right--icon" src={User} alt="person"/>
+                <div className='navi__right--user'>
                 Christina
                 </div>
-                <img className="nav__right--icon" src={Earth} alt="explore"/>
-                <div className='nav__right--language'>
+                <img className="navi__right--icon" src={Earth} alt="explore"/>
+                <div className='navi__right--language'>
                 English
                 </div>
             </div>

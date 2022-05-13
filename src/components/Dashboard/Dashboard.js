@@ -42,9 +42,10 @@ class Dashboard extends Component{
       } 
 
     render() {
+      console.log(this.props.match);
+
         return (
             <div className='below-nav'>
-
                 <ContributorBar
                 location={this.props.match.params.page}/>
 
@@ -92,7 +93,7 @@ class Dashboard extends Component{
                     </div>
                 </div>
                 </div>
-            </div>
+                </div>
         );    
     }
 };
