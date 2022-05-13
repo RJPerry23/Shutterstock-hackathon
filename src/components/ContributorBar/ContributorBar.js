@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom';
 
 class ContributorBar extends Component {
   state = {
-    dashboard: true,
+    dashboard: false,
     earnings: false,
     portfolio: false,
     insights: false,
