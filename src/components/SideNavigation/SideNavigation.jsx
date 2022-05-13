@@ -17,33 +17,39 @@ function SideNavigation() {
         <ul className='nav__list'>
           <li className='nav__item'>
             <Link to='/dashboard' className='nav__link'>
-              <img className='nav__icon homeIcon' src={homeIcon} alt='calendar' />
+              <img className='nav__icon nav__icon--active homeIcon' src={homeIcon} alt='calendar' />
             </Link>
+            <span className='nav__text'>Home</span>
           </li>
           <li className='nav__item'>
             <Link to='/' className='nav__link'>
               <img className='nav__icon' src={calendarIcon} alt='calendar' />
             </Link>
+            <span className='nav__text'>Plan</span>
           </li>
           <li className='nav__item'>
             <Link to='/' className='nav__link'>
               <img className='nav__icon' src={GroupIcon} alt='calendar' />
             </Link>
+            <span className='nav__text'>Collection</span>
           </li>
           <li className='nav__item'>
             <Link to='/' className='nav__link'>
               <img className='nav__icon' src={paintIcon} alt='calendar' />
             </Link>
+            <span className='nav__text'>Creator</span>
           </li>
           <li className='nav__item'>
             <Link to='/' className='nav__link'>
               <img className='nav__icon' src={fileIcon} alt='calendar' />
             </Link>
+            <span className='nav__text'>Account</span>
           </li>
           <li className='nav__item'>
             <Link to='/' className='nav__link'>
               <img className='nav__icon' src={helpIcon} alt='calendar' />
             </Link>
+            <span className='nav__text'>Help</span>
           </li>
         </ul>
       </nav>
