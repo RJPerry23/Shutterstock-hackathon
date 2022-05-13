@@ -9,6 +9,8 @@ import Trending from '../../images/Trending.png'
 import Insights from '../../images/Insights.png'
 import Notifications from '../../images/notifications.svg'
 import Menu from '../../images/Menu.svg'
+import MenuDark from '../../images/Menu-dark.svg'
+import NotificationsDark from '../../images/Notifications-dark.svg'
 
 class Dashboard extends Component{
     state = {
@@ -56,7 +58,7 @@ class Dashboard extends Component{
 
                 <div className='dashboard'>
                     <div className='dashboard__top'>
-                        <h2 className='dashboard__top--heading'>
+                        <h2 className={this.state.animationClass === "test"? 'dashboard__top--heading' : 'dashboard__top--heading--alternate'}>
                         {this.props.match.params.page?
                         this.props.match.params.page : 
                         "Overview"}</h2>
@@ -65,8 +67,8 @@ class Dashboard extends Component{
                         type="text" 
                         className='dashboard__top--search'
                         placeholder='Search...'></input>
-                        <img src={Menu} className='dashboard__top--menu' alt='menu'/>
-                        <img src={Notifications} className='dashboard__top--notifications' alt='notifications'/>
+                        <img src={this.state.animationClass === "test"? Menu : MenuDark} className='dashboard__top--menu' alt='menu'/>
+                        <img src={this.state.animationClass === "test"? Notifications : NotificationsDark} className='dashboard__top--notifications' alt='notifications'/>
                     </div>
                     <div className='dashboard__middle'>
                         <div className='dashboard__middle--left'>
