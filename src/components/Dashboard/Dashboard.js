@@ -18,26 +18,26 @@ import ShareDark from '../../images/share-dark.svg'
 
 class Dashboard extends Component{
     state = {
-        animationClass: 'test'
+        animationClass: 'test paused'
     }
     
     //For background animation
     constructor (props) {
         super(props);
         this.state = {
-          animationClass: 'test'
+          animationClass: 'test paused'
         }
         this.animationState = this.animationState.bind(this);
       }
       
       animationState(){
-        if(this.state.animationClass === 'test'){
+        if(this.state.animationClass === 'test paused'){
           this.setState({
-            animationClass: 'test paused'
+            animationClass: 'test'
           });
         }else{
           this.setState({
-            animationClass: 'test'
+            animationClass: 'test paused'
           });
         }
       } 
@@ -52,13 +52,13 @@ class Dashboard extends Component{
             <ContributorBar location={this.props.match.params.page} />
 
             <div className={this.state.animationClass}>
-              {this.state.animationClass === 'test' ? (
+              {this.state.animationClass === 'test paused' ? (
                 <button className='login__bottom--button' onClick={this.animationState}>
-                  Normal Mode
+                  Color Mode
                 </button>
               ) : (
                 <button className='login__bottom--button' onClick={this.animationState}>
-                  Color Mode{' '}
+                  Normal Mode{' '}
                 </button>
               )}
 
