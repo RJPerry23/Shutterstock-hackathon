@@ -30,6 +30,21 @@ class ContributorBar extends Component{
         feedback: false
     }
 
+    // componentDidMount() {
+    //     if (this.props.location) {
+    //         console.log(window.location.pathname);
+    //         this.setState({
+    //             dashboard: false,
+    //             earnings: false,
+    //             portfolio: false,
+    //             insights: false,
+    //             settings: false,
+    //             logout: false,
+    //             feedback: false
+    //         })
+    //     }
+    // }
+
     clickDashboard = () => {
         if (this.state.dashboard === false) {
             this.setState({
