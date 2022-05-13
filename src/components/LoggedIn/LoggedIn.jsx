@@ -1,17 +1,17 @@
 import React from 'react';
 import page from '../../assets/HomePage.png';
-import './Home.scss';
+import './LoggedIn.scss';
 import SideNavigation from '../SideNavigation/SideNavigation';
 
-function Home() {
+function LoggedIn() {
   return (
     <div className='container'>
       <SideNavigation />
-      <img className='page' src={page} alt='Home Page' />
+      <img className='page' src={page} alt='LoggedIn Page' />
 
       <SideNavigation />
     </div>
   );
 }
 
-export default Home;
+export default LoggedIn;
