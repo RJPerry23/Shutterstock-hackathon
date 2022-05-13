@@ -1,5 +1,3 @@
-import ContributorBar from './components/ContributorBar/ContributorBar';
-import CreatorPage from './components/Dashboard/Dashboard';
 import Nav from './components/Nav/Nav';
 import './styles/App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -41,6 +39,12 @@ constructor (props) {
         <Nav/>
         <Switch>
           <Route path='/' exact component={Dashboard}/>
+          <Route path='/:page' component={Dashboard}/>
+          {/* <Route path='/' component={Dashboard}/>
+          <Route path='/' component={Dashboard}/>
+          <Route path='/' component={Dashboard}/>
+          <Route path='/' component={Dashboard}/>
+          <Route path='/' component={Dashboard}/> */}
         </Switch>
         </BrowserRouter>
         </div>
