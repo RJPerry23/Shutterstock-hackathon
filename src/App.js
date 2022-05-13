@@ -1,4 +1,3 @@
-import Nav from './components/Nav/Nav';
 import './styles/App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard';
@@ -11,7 +10,6 @@ class App extends Component {
     return (
       <div className='App'>
         <BrowserRouter>
-          <Nav />
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/login' component={LoggedIn} />
