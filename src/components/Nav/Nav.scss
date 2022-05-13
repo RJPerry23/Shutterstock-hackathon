@@ -1,0 +1,43 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+
+    &__left{
+
+        &--contributor{
+            width: 20rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+
+        &--icon{
+            width: 2rem;
+        }
+
+        &--user{
+            position: relative;
+            top: 0.35rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #6a6a6a;
+            font-weight: 600;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            border-right: 2px solid #E1E1E1;
+        }
+
+        &--language{
+            position: relative;
+            top: 0.35rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #6a6a6a;
+            font-weight: 600;
+        }
+    }
+}

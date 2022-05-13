@@ -1,0 +1,103 @@
+.below-nav{
+    display: flex;
+    width: auto
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 40rem;
+
+    &__top{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 1rem;
+
+        &--heading{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 1rem;
+        }
+
+        &--icon{
+            width: 1rem;
+            position: relative;
+            left: 1.75rem;
+        }
+
+        &--search{
+            height: 2rem;
+            width: 19.15rem;
+            border-radius: 5px;
+            border: 1px solid #6a6a6a;
+            outline: none;
+            padding-left: 2rem;
+
+            &::placeholder{
+                color: #6a6a6a;
+            }
+        }
+
+        &--menu{
+            margin-left: 3.25rem;
+            width: 1.5rem;
+        }
+
+        &--notifications{
+            margin-left: 3.25rem;
+            width: 1.5rem;
+        }
+    }
+
+    &__middle{
+        display: flex;
+
+        &--left{
+            width: 33rem;
+
+            &--top{
+                width: 30rem;
+                margin-left: 1rem;
+                border-radius: 20px;
+                box-shadow: -1px 6px 5px -1px rgba(107,107,107,1);
+            }
+
+            &--middle{
+                width: 30rem;
+                margin-left: 1rem;
+                margin-top: 1rem;
+                border-radius: 20px;
+                box-shadow: -1px 6px 5px -1px rgba(107,107,107,1);
+            }
+
+            &--bottom{
+                width: 30rem;
+                margin-left: 1rem;
+                margin-top: 1rem;
+                border-radius: 20px;
+                box-shadow: -1px 6px 5px -1px rgba(107,107,107,1);
+            }
+        }
+
+        &--right{
+            display: flex;
+            flex-direction: column;
+
+            &--top{
+                width: 9.4rem;
+                margin-right: 1rem;
+                border-radius: 20px;
+                box-shadow: -1px 6px 5px -1px rgba(107,107,107,1);
+            }
+
+            &--bottom{
+                width: 9.25rem;
+                margin-right: 1rem;
+                margin-top: 1rem;
+                border-radius: 20px;
+                box-shadow: -1px 6px 5px -1px rgba(107,107,107,1);
+            }
+        }
+    }
+}
